@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+}
+@keyframes change-color{
+    from{background-color: blue;}
+    to{background-color: green;}
+}
+#task1{
+    height: 20vh;
+    width: 30vw;
+    border: 1px solid black;
+    background-color: blue;
+    animation: change-color 5s ;
+}
+@keyframes change-color2{
+    0%{background-color: blue;}
+    25%{background-color: green;}
+    50%{background-color: yellow;}
+    100%{background-color: red;}
+}
+#task2{
+    height: 20vh;
+    width: 30vw;
+    border: 1px solid black;
+    background-color: blue;
+    animation: change-color2 5s;
+}
+@keyframes invis{
+    from{filter: opacity(1);}
+    to{filter: opacity(0);}
+}
+#task3{
+    width: 15vw;
+    height: 20vh;
+    animation: invis 5s;
+}
+@keyframes change-up{
+    from{filter: blur(20px);}
+    to{filter: opacity(0.5);}
+}
+#task4{
+    width: 20vw;
+    height: 20vh;
+    animation: change-up 5s;
+}
+@keyframes to-old{
+    from{filter: sepia(0);}
+    to{filter: sepia(1);}
+}
+#task5{
+    width: 20v;
+    height: 20vh;
+    animation: to-old 5s;
+}
+@keyframes move-change{
+    from{background-color: orange;transform:;}
+    to{background-color: pink; transform: translateX(30vw);}
+}
+#task6{
+    width: 10vw;
+    height: 10vh;
+    background-color:pink;
+    animation: move-change 3s infinite alternate;
+}
+@keyframes down-up{
+    0%{background-color: red;}
+    25%{background-color: green;;}
+    50%{background-color: yellow;}
+    100%{background-color: aqua;transform:translateY(20vh);}
+}
+#task7{
+    width: 10vw;
+    height: 10vh;
+    background-color: red;
+    animation: down-up 4s infinite alternate;
+}
+@keyframes shadow-game{
+    from{filter: drop-shadow(5px 5px 0px #000);}
+    to{filter: drop-shadow(5px 5px 10px rgb(238, 238, 29));}
+}
+#task8{
+    width: 15vw;
+    height: 20vh;
+    filter: drop-shadow(5px 5px 0px #000);
+    animation: shadow-game 5s infinite alternate;
+}
+@keyframes blur-it{
+    from{filter: blur(0);}
+    to{filter: blur(10px);}
+}
+#task9{
+    width: 15vw;
+    height: 20vh;
+    animation: blur-it 5s infinite alternate;
+}
+@keyframes etgar{
+    0%{filter: drop-shadow(15px 15px 10px black) contrast(20%);}
+    25%{filter: drop-shadow(15px 15px 10px red) contrast(80%);}
+    50%{filter: drop-shadow(15px 15px 10px yellow) contrast(100%);}
+    100%{filter: drop-shadow(15px 15px 10px blue ) contrast(200%);transform: scale(1.2);}
+
+}
+#etgarm{
+    width: 15vw;
+    height: 20vh;
+    filter:drop-shadow(5px 5px 10px blue );
+}
+#etgarm:hover{
+    animation: etgar 8s;
+}
+@keyframes changew{
+    from{width: 30px;}
+    to{width: 100px;}
+}
+#task11{
+    height:10vh;
+    width: 30px;
+    background-color: aquamarine;
+    animation: changew 5s alternate;
+}
+@keyframes changew2{
+    0%{width:10px}
+    25%{width:70px}
+    50%{width:30px}
+    100%{width:200px}
+}
+#task12{
+    height: 30px;
+    width: 10px;
+    background-color: blueviolet;
+    animation: changew2 5s;
+}
+@keyframes bright{
+    from{filter: brightness(0%);}
+    to{filter: brightness(100%);}
+}
+#task13{
+    height: 30vh;
+    width:30vw;
+    animation: bright 5s;
+}
+@keyframes bigup{
+    from{}
+    to{transform: scale(2);}
+}
+#task14{
+    height:30vh;
+    width: 30vw;
+    animation: bigup 5s;
+}
+@keyframes miss {
+    from{filter:sepia(0) contrast(20%)}
+    to{filter: sepia(1) contrast(200%);}
+}
+#task15{
+    height:30vh;
+    width: 30vw;
+    animation: miss 5s;
+}
+@keyframes doit{
+    from{}
+    to{transform: scale(1.4) translateX(15vh);}
+}
+#task16{
+    height: 10vh;
+    width: 10vw;
+    background-color: bisque;
+    animation: doit 4s infinite alternate;
+}
+@keyframes higol{
+    from{}
+    to{transform: scale(1.5) translateY(20vh);}
+}
+#task17{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(219, 185, 15);
+    animation: higol 5s infinite alternate;
+}
